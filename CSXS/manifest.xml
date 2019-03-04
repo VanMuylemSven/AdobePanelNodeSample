@@ -14,7 +14,7 @@
 * written permission of Adobe. 
 **************************************************************************/
 -->
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.my.test" ExtensionBundleVersion="1.0.0"
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.my.test" ExtensionBundleVersion="1.0.0"
 		ExtensionBundleName="NodeSamplePanel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
 		<Extension Id="com.my.test.panel" Version="1.0" />
@@ -22,18 +22,15 @@
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
-			<Host Name="ILST" Version="17.0" />
 			<Host Name="PHXS" Version="14.0" />
 			<Host Name="PHSP" Version="14.0" />			
-			<Host Name="IDSN" Version="10.0" />
 			<Host Name="PPRO" Version="7.0" />			
-			<Host Name="AUDT" Version="8.0" />			
 		</HostList>
 		<LocaleList>
 			<Locale Code="All" />
 		</LocaleList>
 		<RequiredRuntimeList>
-			<RequiredRuntime Name="CSXS" Version="4.0" />
+			<RequiredRuntime Name="CSXS" Version="7.0" /> <!-- 7.0 version gives "uncaught reference error: $.ajax -> $ not defined -->
 		</RequiredRuntimeList>
 	</ExecutionEnvironment>
 	<DispatchInfoList>
