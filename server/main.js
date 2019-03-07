@@ -19,7 +19,7 @@ function run(){
     var hostname = "localhost"
 
     /* Start the server */
-    httpServer.listen(port);
+    httpServer.listen(port, hostname);
 
     /* Middlewares */
     app.use(bodyParser.json());

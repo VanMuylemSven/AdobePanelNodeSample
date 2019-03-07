@@ -8,6 +8,13 @@ csInterface.requestOpenExtension("com.my.localserver", "");
 var openButton = document.querySelector("#import-button");
 openButton.addEventListener("click", importDoc);
 
+
+if (typeof(require) !== 'undefined') {
+    alert("Node.js is enabled");
+} else {
+    alert("Node.js is disabled");
+}
+
 /* Get the path for your panel */
 var extensionDirectory = csInterface.getSystemPath("extension");
 
